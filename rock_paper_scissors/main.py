@@ -18,9 +18,9 @@ else:
 
 print('* ' * 20 + '*')
 print('*' + ' ' * 39 + '*')
-print('*' +' ' * num + GAME_NAME + ' ' * (num + x) + '*')
+print('*' + ' ' * num + GAME_NAME + ' ' * (num + x) + '*')
 print('* ', '  ' * 18, '*')
-print('* ' * 21 ,)
+print('* ' * 21, )
 
 gender_ending = ''
 game = True
@@ -82,9 +82,6 @@ while game and rounds < int(max_rounds):
             else:
                 computer_option = choice(['камень', 'ножницы', 'бумага'])
 
-
-
-
     player_option = input("\nКамень, ножницы, бумага или выход? ").lower()
     player_option_legal = ['камень', 'ножницы', 'бумага', 'выход']
     while player_option not in player_option_legal:
@@ -127,9 +124,9 @@ while game and rounds < int(max_rounds):
         rounds += 1
         win = 'computer'
 
-
 print(f"\n{player_name.title()}, Вы сыграли {rounds} раундов")
-print(f"{player_name.title()}, твое колличество очков - {player_score} , колличество очков у компьютера - {computer_score}!")
+print(
+    f"{player_name.title()}, твое колличество очков - {player_score} , колличество очков у компьютера - {computer_score}!")
 
 if player_score > computer_score:
     print(f"Поздравляю {player_name.title()}, ты победил!")
@@ -137,6 +134,3 @@ elif computer_score > player_score:
     print(f"К сожалению {player_name.title()}, ты проиграл")
 else:
     print("Ничья, победила дружба!")
-
-
-
